@@ -17,6 +17,9 @@
 		77D9FDD71A96CC39001CE02B /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D9FDD61A96CC39001CE02B /* ActionViewController.m */; };
 		77D9FDD91A96CC39001CE02B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D9FDD81A96CC39001CE02B /* MainInterface.storyboard */; };
 		77D9FDDC1A96CC39001CE02B /* D61ActionExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77D9FDD11A96CC39001CE02B /* D61ActionExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		77D9FDEB1A96D208001CE02B /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D9FDEA1A96D208001CE02B /* ShareViewController.m */; };
+		77D9FDED1A96D208001CE02B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D9FDEC1A96D208001CE02B /* MainInterface.storyboard */; };
+		77D9FDF01A96D208001CE02B /* D61ShareExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77D9FDE51A96D208001CE02B /* D61ShareExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,13 @@
 			remoteGlobalIDString = 77D9FDD01A96CC39001CE02B;
 			remoteInfo = D61ActionExt;
 		};
+		77D9FDEE1A96D208001CE02B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77D9FD9C1A96CACC001CE02B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77D9FDE41A96D208001CE02B;
+			remoteInfo = D61ShareExt;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				77D9FDF01A96D208001CE02B /* D61ShareExt.appex in Embed App Extensions */,
 				77D9FDDC1A96CC39001CE02B /* D61ActionExt.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -69,6 +80,11 @@
 		77D9FDD51A96CC39001CE02B /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
 		77D9FDD61A96CC39001CE02B /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
 		77D9FDD81A96CC39001CE02B /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		77D9FDE51A96D208001CE02B /* D61ShareExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = D61ShareExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D9FDE81A96D208001CE02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D9FDE91A96D208001CE02B /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		77D9FDEA1A96D208001CE02B /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		77D9FDEC1A96D208001CE02B /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +109,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77D9FDE21A96D208001CE02B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +125,7 @@
 				77D9FDA61A96CACC001CE02B /* D61ContainingApp */,
 				77D9FDC01A96CACC001CE02B /* D61ContainingAppTests */,
 				77D9FDD21A96CC39001CE02B /* D61ActionExt */,
+				77D9FDE61A96D208001CE02B /* D61ShareExt */,
 				77D9FDA51A96CACC001CE02B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +136,7 @@
 				77D9FDA41A96CACC001CE02B /* D61ContainingApp.app */,
 				77D9FDBD1A96CACC001CE02B /* D61ContainingAppTests.xctest */,
 				77D9FDD11A96CC39001CE02B /* D61ActionExt.appex */,
+				77D9FDE51A96D208001CE02B /* D61ShareExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +201,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		77D9FDE61A96D208001CE02B /* D61ShareExt */ = {
+			isa = PBXGroup;
+			children = (
+				77D9FDE91A96D208001CE02B /* ShareViewController.h */,
+				77D9FDEA1A96D208001CE02B /* ShareViewController.m */,
+				77D9FDEC1A96D208001CE02B /* MainInterface.storyboard */,
+				77D9FDE71A96D208001CE02B /* Supporting Files */,
+			);
+			path = D61ShareExt;
+			sourceTree = "<group>";
+		};
+		77D9FDE71A96D208001CE02B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77D9FDE81A96D208001CE02B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,6 +236,7 @@
 			);
 			dependencies = (
 				77D9FDDB1A96CC39001CE02B /* PBXTargetDependency */,
+				77D9FDEF1A96D208001CE02B /* PBXTargetDependency */,
 			);
 			name = D61ContainingApp;
 			productName = D61ContainingApp;
@@ -233,6 +278,23 @@
 			productReference = 77D9FDD11A96CC39001CE02B /* D61ActionExt.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		77D9FDE41A96D208001CE02B /* D61ShareExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77D9FDF11A96D209001CE02B /* Build configuration list for PBXNativeTarget "D61ShareExt" */;
+			buildPhases = (
+				77D9FDE11A96D208001CE02B /* Sources */,
+				77D9FDE21A96D208001CE02B /* Frameworks */,
+				77D9FDE31A96D208001CE02B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = D61ShareExt;
+			productName = D61ShareExt;
+			productReference = 77D9FDE51A96D208001CE02B /* D61ShareExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,6 +312,9 @@
 						TestTargetID = 77D9FDA31A96CACC001CE02B;
 					};
 					77D9FDD01A96CC39001CE02B = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					77D9FDE41A96D208001CE02B = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
@@ -270,6 +335,7 @@
 				77D9FDA31A96CACC001CE02B /* D61ContainingApp */,
 				77D9FDBC1A96CACC001CE02B /* D61ContainingAppTests */,
 				77D9FDD01A96CC39001CE02B /* D61ActionExt */,
+				77D9FDE41A96D208001CE02B /* D61ShareExt */,
 			);
 		};
 /* End PBXProject section */
@@ -297,6 +363,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				77D9FDD91A96CC39001CE02B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D9FDE31A96D208001CE02B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D9FDED1A96D208001CE02B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +403,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77D9FDE11A96D208001CE02B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D9FDEB1A96D208001CE02B /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -341,6 +423,11 @@
 			isa = PBXTargetDependency;
 			target = 77D9FDD01A96CC39001CE02B /* D61ActionExt */;
 			targetProxy = 77D9FDDA1A96CC39001CE02B /* PBXContainerItemProxy */;
+		};
+		77D9FDEF1A96D208001CE02B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77D9FDE41A96D208001CE02B /* D61ShareExt */;
+			targetProxy = 77D9FDEE1A96D208001CE02B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -520,6 +607,30 @@
 			};
 			name = Release;
 		};
+		77D9FDF21A96D209001CE02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = D61ShareExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		77D9FDF31A96D209001CE02B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = D61ShareExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +664,14 @@
 			buildConfigurations = (
 				77D9FDDE1A96CC39001CE02B /* Debug */,
 				77D9FDDF1A96CC39001CE02B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		77D9FDF11A96D209001CE02B /* Build configuration list for PBXNativeTarget "D61ShareExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D9FDF21A96D209001CE02B /* Debug */,
+				77D9FDF31A96D209001CE02B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
