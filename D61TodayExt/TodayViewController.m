@@ -18,6 +18,10 @@
 
 @implementation TodayViewController
 
+- (IBAction)doButton:(id)sender {
+    [self updateDisplay];
+}
+
 - (void)updateDisplay {
     self.count++;
     self.myLabel.text = [NSString stringWithFormat:@"Count = %i", self.count];
@@ -42,5 +46,22 @@
 
     completionHandler(NCUpdateResultNewData);
 }
+
+//- (void)viewDidAppear:(BOOL)animated {
+//    NSLog(@"We appeared");
+//    self.count++;
+//    [self updateDisplay];
+//}
+
+//- (void)viewDidDisappear:(BOOL)animated {
+//    [super viewDidDisappear:animated];
+//    if (!self.hasSignaled) [self signalComplete:NCUpdateResultFailed];
+//}
+
+//- (void)signalComplete:(NCUpdateResult)updateResult {
+//    NSLog(@"Signaling complete: %lu", updateResult);
+//    self.hasSignaled = YES;
+//    if (self.completionHandler) self.completionHandler(updateResult);
+//}
 
 @end
