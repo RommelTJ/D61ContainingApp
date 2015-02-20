@@ -11,13 +11,21 @@
 
 @interface TodayViewController () <NCWidgetProviding>
 
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property int count;
+
 @end
 
 @implementation TodayViewController
 
+- (void)updateDisplay {
+    self.count++;
+    self.myLabel.text = [NSString stringWithFormat:@"Count = %i", self.count];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self updateDisplay];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,7 +35,7 @@
 
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
     // Perform any setup necessary in order to update the view.
-    
+    [self updateDisplay];
     // If an error is encountered, use NCUpdateResultFailed
     // If there's no update required, use NCUpdateResultNoData
     // If there's an update, use NCUpdateResultNewData
